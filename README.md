@@ -27,12 +27,12 @@ Projetos de modelagem de dados e SQL, como este, geralmente incorporam as seguin
           Um produto pode ser fornecido por zero ou mais fornecedores, cada pode fornecer zero ou mais produtos.
 
     * Este projeto utiliza um diagrama de Entidade-Relacionamento (ERD) para visualizar a estrutura do banco de dados antes da implementação física, como visto na imagem fornecida.
-    
+    ![Diagrama do Modelo Conceitual do Banco de Dados de E-commerce](modelagem_conceitual_ecommerce.png)
 
 * **Modelagem Lógica e Física:**
     * **Lógica:** Tradução do modelo conceitual para uma estrutura que pode ser implementada em um SGBD, definindo tabelas, colunas, tipos de dados e chaves primárias/estrangeiras.
     * **Física:** Implementação prática da modelagem lógica através de scripts DDL (Data Definition Language) para criar o esquema do banco de dados no MySQL.
-
+ ![Diagrama do Modelo Lógico do Banco de Dados de E-commerce](modelagem_logica_ecommerce.png)
 * **Integridade dos Dados:**
     * Uso de chaves primárias (`PRIMARY KEY`) para garantir a unicidade e identificação de registros.
     * Uso de chaves estrangeiras (`FOREIGN KEY`) para impor a integridade referencial entre as tabelas, garantindo que os relacionamentos sejam válidos (ex: um `id_cliente` em `PEDIDOS` deve existir na tabela `CLIENTES`).
